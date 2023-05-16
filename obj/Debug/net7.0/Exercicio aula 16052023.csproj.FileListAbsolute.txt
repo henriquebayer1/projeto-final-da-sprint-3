@@ -1,0 +1,15 @@
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\bin\Debug\net7.0\Exercicio aula 16052023.exe
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\bin\Debug\net7.0\Exercicio aula 16052023.deps.json
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\bin\Debug\net7.0\Exercicio aula 16052023.runtimeconfig.json
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\bin\Debug\net7.0\Exercicio aula 16052023.dll
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\bin\Debug\net7.0\Exercicio aula 16052023.pdb
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\obj\Debug\net7.0\Exercicio aula 16052023.csproj.AssemblyReference.cache
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\obj\Debug\net7.0\Exercicio aula 16052023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\obj\Debug\net7.0\Exercicio aula 16052023.AssemblyInfoInputs.cache
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\obj\Debug\net7.0\Exercicio aula 16052023.AssemblyInfo.cs
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\obj\Debug\net7.0\Exercicio aula 16052023.csproj.CoreCompileInputs.cache
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\obj\Debug\net7.0\Exercicio aula 16052023.dll
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\obj\Debug\net7.0\refint\Exercicio aula 16052023.dll
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\obj\Debug\net7.0\Exercicio aula 16052023.pdb
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\obj\Debug\net7.0\Exercicio aula 16052023.genruntimeconfig.cache
+C:\Users\45922978810\Desktop\Projeto Final Sprint 16052023\obj\Debug\net7.0\ref\Exercicio aula 16052023.dll

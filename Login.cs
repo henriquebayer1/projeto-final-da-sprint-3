@@ -1,0 +1,84 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Exercicio_aula_16052023
+{
+    public class Login
+    {
+
+//instaciando objeto da classe Usuario
+Usuario usernovo = new Usuario();
+
+//instanciando objeto da classe Login
+Login login = new Login();
+
+
+//
+        
+public bool Logado;
+
+
+public Login()
+{
+    
+}
+
+public string Logar(Usuario user)
+{
+Console.WriteLine($"Digite seu E-mail");
+
+
+    
+    
+    
+    return "a";}
+
+public string Deslogar(Usuario user)
+{return "a";}
+
+
+public void Menu()
+{Console.WriteLine($"Bem vindo ao sistema de cadastro de produtos!!!");
+Console.WriteLine($"");
+
+
+//CADASTRO NO SISTEMA DO NOVO USUARIO
+Console.WriteLine($"Digite as seguintes informacoes para cadastro no sistema:");
+
+Console.WriteLine($"Digite o seu nome");
+usernovo.Nome = Console.ReadLine();
+
+Console.WriteLine($"Digite o seu E-mail");
+usernovo.Email = Console.ReadLine();
+
+Console.WriteLine($"Digite sua senha");
+usernovo.Senha = Console.ReadLine();
+
+usernovo.DataCadastro = DateTime.UtcNow;
+
+usernovo.Cadastrar(usernovo);
+
+
+//LOGIN NO SISTEMA COM O USUARIO CADASTRADO
+Console.WriteLine($"Logue no sistema com seu usuario:");
+
+
+login.Logar(usernovo);
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+    }
+}
