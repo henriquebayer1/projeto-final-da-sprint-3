@@ -11,8 +11,10 @@ namespace Exercicio_aula_16052023
 //instaciando objeto da classe Usuario
 Usuario usernovo = new Usuario();
 
+Marca m = new Marca();
+
 //instanciando objeto da classe Login
-Login login = new Login();
+
 
 
 //
@@ -27,16 +29,47 @@ public Login()
 
 public string Logar(Usuario user)
 {
-Console.WriteLine($"Digite seu E-mail");
+
+    do
+    {Console.WriteLine($"Digite seu E-mail:");
+string email = Console.ReadLine();
 
 
+Console.WriteLine($"Digite sua senha:");
+string senha = Console.ReadLine();
+
+if (email == user.Email && senha == user.Senha)
+{
+    this.Logado = true;
+}
+else
+{
+    this.Logado = false;
+}
     
+    if (this.Logado == true)
+    {
+        Console.WriteLine($"Voce esta logado no sistema, agora tem acesso ao menu");
+        
+    }
+    else
+    {
+        Console.WriteLine($"Erro no E-mail ou Senha tente novamente");
+        
+    }
+        
+    } while (this.Logado == false);
+
     
     
     return "a";}
 
 public string Deslogar(Usuario user)
-{return "a";}
+{
+    Logado = false;
+    
+    
+    return "a";}
 
 
 public void Menu()
@@ -64,18 +97,53 @@ usernovo.Cadastrar(usernovo);
 //LOGIN NO SISTEMA COM O USUARIO CADASTRADO
 Console.WriteLine($"Logue no sistema com seu usuario:");
 
-
-login.Logar(usernovo);
-
+this.Logar(usernovo);
 
 
+//variavel para opcao do menu
+char opcao;
 
+do
+{
+    Console.WriteLine(@$"
+            [1] - Cadastrar Produto
+            [2] - Listar Produtos
+            [3] - Remover Produto
+            ----------------------
+            [4] - Cadastrar Marca
+            [5] - Listar Marcas
+            [6] - Remover Marca
+            [0] - Sair
+            ");
+opcao = char.Parse(Console.ReadLine());
 
+            switch (opcao)
+            {
+                case '1':
+                
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                m.Cadastrar();
+                    break;
+                case '5':
+                m.Listar();
+                    break;
+                case '6':
+                    break;
+                case '0':
+                    break;
+                default:
+                Console.WriteLine($"Opcao Invalida");
+                
+                    break;
+            }
+} while (opcao != 0);
 
-
-
-
-
+            
 
 
 }
