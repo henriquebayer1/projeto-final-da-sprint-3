@@ -3,8 +3,7 @@
 
 
 
-//Lista da classe Produto
-List<Produto> Produtos = new List<Produto>();
+
 
 
 Login loginteste = new Login();

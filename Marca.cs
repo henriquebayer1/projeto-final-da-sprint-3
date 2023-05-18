@@ -22,6 +22,10 @@ public string NomeMarca;
 public DateTime DataCadastro;
 
 
+public Marca()
+{
+    
+}
 
 public string Cadastrar()
 {Marca novamarca = new Marca();
@@ -31,6 +35,8 @@ novamarca.Codigo = int.Parse(Console.ReadLine());
 
 {Console.WriteLine($"Insira o nome da nova da marca");
 novamarca.NomeMarca = Console.ReadLine();
+
+novamarca.DataCadastro = DateTime.Now;
 
 Marcas.Add(novamarca);
 
@@ -44,18 +50,22 @@ Marcas.Add(novamarca);
  public string Deletar()
 {
     Console.WriteLine($"Digite o codigo da marca que deseja excluir");
-    Marca MarcaExcluida = Marcas.Find(x => x.Codigo == MarcaExcluida);
+    int MarcaExcluidaCod = int.Parse(Console.ReadLine());
+
+    Marca MarcaExcluida = Marcas.Find(x => x.Codigo == MarcaExcluidaCod);
     
     int index = Marcas.IndexOf(MarcaExcluida);
+
+   Marcas.RemoveAt(index);
     
     return "a";}
 
 public string Listar()
 {
      if (Marcas.Count > 0 || Marcas != null)
-            { foreach (Marca p in Marcas)
+            { foreach (Marca m in Marcas)
             {
-                Console.WriteLine($"Codigo: {p.Codigo} - Nome: {p.NomeMarca}");
+                Console.WriteLine($"Codigo: {m.Codigo} - Nome: {m.NomeMarca} - Data de Cadastro: {m.DataCadastro}");
                 
                 
             }   
@@ -67,5 +77,10 @@ public string Listar()
     
     
     return "a";}
+
+    
+   
+    
+
 
 }}

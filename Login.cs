@@ -13,8 +13,8 @@ Usuario usernovo = new Usuario();
 
 Marca m = new Marca();
 
-//instanciando objeto da classe Login
-
+//instanciando objeto da classe Produto
+Produto p = new Produto();
 
 
 //
@@ -120,25 +120,35 @@ opcao = char.Parse(Console.ReadLine());
             switch (opcao)
             {
                 case '1':
-                
+                p.Cadastrar();
                     break;
+
                 case '2':
+                p.Listar();
                     break;
+
                 case '3':
+                p.Deletar();
                     break;
+
                 case '4':
                 m.Cadastrar();
                     break;
+
                 case '5':
                 m.Listar();
                     break;
+
                 case '6':
+                m.Deletar();
                     break;
+
                 case '0':
+                Console.WriteLine($"Voce saiu do sistema.");
                     break;
+
                 default:
                 Console.WriteLine($"Opcao Invalida");
-                
                     break;
             }
 } while (opcao != 0);
